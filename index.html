@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PATCH NOTES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .widget {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .title {
+      position: absolute;
+      top: 42%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: clamp(1.3rem, 7.5vw, 2rem);
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #ff2222;
+      text-shadow: 
+        0 0 4px #ff0000,
+        0 0 10px #ff0000,
+        0 0 18px #ff2222,
+        0 0 28px rgba(255, 0, 0, 0.7);
+      z-index: 2;
+      text-transform: uppercase;
+      line-height: 1.15;
+      pointer-events: none;
+    }
+
+    .btn {
+      position: absolute;
+      top: 54%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #00e8ff;
+      color: #111;
+      font-size: clamp(0.9rem, 4.8vw, 1.15rem);
+      font-weight: 900;
+      padding: 0.5em 1.55em;
+      border-radius: 7px;
+      box-shadow: 
+        0 0 12px #00e8ff,
+        0 0 24px rgba(0, 232, 255, 0.5);
+      white-space: nowrap;
+      z-index: 2;
+      letter-spacing: 0.8px;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    .widget:hover .btn {
+      background: #ffffff;
+      box-shadow: 
+        0 0 16px #00e8ff,
+        0 0 32px rgba(0, 232, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <a class="widget" href="https://emdexter.blogspot.com/p/patch-notoes.html" target="_blank" rel="noopener">
+    <video autoplay muted loop playsinline>
+      <source src="https://raw.githubusercontent.com/danceknightxd/patchnotes/main/PATCH%20NOTES_clean.mp4" type="video/mp4">
+    </video>
+
+    <div class="title">PATCH NOTES</div>
+    <div class="btn">CLICK HERE</div>
+  </a>
+</body>
+</html>
